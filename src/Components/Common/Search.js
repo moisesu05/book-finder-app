@@ -46,7 +46,8 @@ const styles = (theme) => ({
     padding: "5px",
   },
   textField: {
-    width: "30rem",
+    width: "75vw",
+    maxWidth: "550px",
     color: "white",
   },
 });

@@ -33,7 +33,7 @@ class SearchItems extends Component {
     const { classes } = this.props;
 
     return (
-      <Grid item xs={4} className={classes.root}>
+      <Grid item xs={12} sm={6} lg={3} className={classes.root}>
       
           <Paper className={classes.Paper}>
             <Grid container spacing={2}>
