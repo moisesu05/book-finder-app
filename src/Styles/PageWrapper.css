@@ -1,7 +1,15 @@
 body {
-    margin: 0;
-    background-color: #fafafa;
+    background-color: #ebe9e9;
     position: relative;
     min-height: 100vh;
-    overflow-x: hidden;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
+
+/*for testing*/
+/*
+*{
+    border: 1px solid black; 
+}*/

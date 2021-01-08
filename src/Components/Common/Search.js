@@ -5,16 +5,21 @@ import IconButton from "@material-ui/core/IconButton";
 import SearchIcon from "@material-ui/icons/Search";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { withStyles, Typography } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
+import { 
+  ThemeProvider, 
+  createMuiTheme,
+  responsiveFontSizes,
+  withStyles, } from "@material-ui/core";
 
 import SearchItems from "./SearchItems";
 
-const theme = createMuiTheme({
+let theme = createMuiTheme({
   typography: {
     fontFamily: ["Balsamiq Sans", "cursive"].join(","),
   },
-});
+})
+theme = responsiveFontSizes(theme) 
 
 const styles = (theme) => ({
   content: {
@@ -22,7 +27,8 @@ const styles = (theme) => ({
   },
   searchRoot: {
     flexGrow: 1,
-    padding: "3rem",
+    padding: "1rem 0rem 3rem 1.5rem",
+    maxWidth: "100%"
   },
   hero: {
     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://image.freepik.com/free-vector/book-readers-concept_74855-6263.jpg')`,

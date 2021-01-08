@@ -18,7 +18,6 @@ const styles = (theme) => ({
   appBarTransparent: {
     backgroundColor: "rgb(72,126,103)",
     boxShadow: "none",
-    margin: "10px, 10px, 10px",
   },
 });
 
@@ -42,7 +41,6 @@ class NavBar extends Component {
 
   render() {
     const { classes } = this.props;
-    //TODO: responsive nav with burger
     return (
       <div className={classes.root}>
         <AppBar position="static" className={classes.appBarTransparent}>
@@ -73,26 +71,6 @@ class NavBar extends Component {
             </Button>
           </Toolbar>
         </AppBar>
-        {/* <nav className="navbar">
-                    <div className="navbar-container">
-                        Knowlocator <i class="fas fa-book"></i>
-                        <div className="menu-icon" onClick={this.handleClick}>
-                            <i className={this.state.click ? 'fas fa-times' : 'fas fa-bars'} />    
-                        </div>
-                        <ul className={this.state.click ? 'nav-menu active': 'nav-menu'}>
-                            <li className="nav-item">
-                                <a href="https://github.com/moisesu05/" target="_blank" className="nav-links" onClick={this.closeMobileMenu}>
-                                    About
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="https://github.com/moisesu05/" target="_blank" className="nav-links" onClick={this.closeMobileMenu}>
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>    
-                    </div>
-                </nav> */}
       </div>
     );
   }

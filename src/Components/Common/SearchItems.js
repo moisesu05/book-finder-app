@@ -15,7 +15,6 @@ const styles = (theme) => ({
     margin: "auto",
     padding: theme.spacing(2),
     width: "10vw",
-    
   },
   image: {
     width: 128,
@@ -58,7 +57,7 @@ class SearchItems extends Component {
               <Grid item xs={6} sm container>
                 <Grid item xs container direction="column" spacing={2}>
                   <Grid item xs>
-                    <Typography gutterBottom variant="subtitle1">
+                    <Typography gutterBottom variant="subtitle2">
                       <b>Title:</b> {this.props.volumeInfo.title}
                     </Typography>
                     <Typography variant="body2" gutterBottom>
