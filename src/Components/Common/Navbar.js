@@ -63,7 +63,7 @@ class NavBar extends Component {
               About
             </Button>
             <Button
-              href="https://github.com/moisesu05/"
+              href="https://www.linkedin.com/in/moises-ronan-44060b191/"
               target="_blank"
               style={{ color: "white" }}
               color="inherit"
